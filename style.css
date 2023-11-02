@@ -1,0 +1,35 @@
+I
+{
+margin:0;
+padding:0;
+width:100%;
+}
+body{
+background:black;
+}
+.text{
+width:100%;
+position:absolute;
+top:54%;
+left:75%;
+transform:translate(-50%,-50%);
+display:flex;
+}
+.text span{
+text-align:center;
+font-weight:880;
+font-size:55px;
+color:red;
+transition:1s;
+-webkit-transition:1s;
+-moz-transition:1s;
+animation:reveal 2.5s linear forwards;
+animation-duration:8s;
+opacity:0;
+}
+@keyframes reveal{
+100%{
+opacity:1;
+filter:blur(0px);
+}
+}
